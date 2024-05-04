@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,33 +17,47 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <style>
-        *{
+        * {
             font-family: 'Jura';
         }
+
         :root {
-            --bg-color: #ffffff; /* Light mode background color */
-            --text-color: #343a40; /* Light mode text color */
-            --icon-color: #343a40; /* Light mode icon color */
-            --button-color: #007bff; /* Light mode button color */
-            --card-bg-color: #f8f9fa; /* Light mode card background color */
-            --card-text-color: #343a40; /* Light mode card text color */
+            --bg-color: #ffffff;
+            /* Light mode background color */
+            --text-color: #343a40;
+            /* Light mode text color */
+            --icon-color: #343a40;
+            /* Light mode icon color */
+            --button-color: #007bff;
+            /* Light mode button color */
+            --card-bg-color: #f8f9fa;
+            /* Light mode card background color */
+            --card-text-color: #343a40;
+            /* Light mode card text color */
         }
 
         /* Dark mode */
         .dark-mode {
-            --bg-color: #343a40; /* Dark mode background color */
-            --text-color: #ffffff; /* Dark mode text color */
-            --icon-color: #ffffff; /* Dark mode icon color */
-            --button-color: #007bff; /* Dark mode button color */
-            --card-bg-color: #343a40; /* Dark mode card background color */
-            --card-text-color: #ffffff; /* Dark mode card text color */
+            --bg-color: #343a40;
+            /* Dark mode background color */
+            --text-color: #ffffff;
+            /* Dark mode text color */
+            --icon-color: #ffffff;
+            /* Dark mode icon color */
+            --button-color: #007bff;
+            /* Dark mode button color */
+            --card-bg-color: #343a40;
+            /* Dark mode card background color */
+            --card-text-color: #ffffff;
+            /* Dark mode card text color */
         }
 
         body {
             background-color: var(--bg-color);
             color: var(--text-color);
             transition: background-color 0.3s, color 0.3s;
-            padding-top: 70px; /* Adjusted padding for fixed navbar */
+            padding-top: 70px;
+            /* Adjusted padding for fixed navbar */
         }
 
         .navbar {
@@ -116,30 +131,34 @@
         }
 
         .social-media .btn {
-            padding: 10px 15px; /* Adjust padding */
-            margin-right: 10px; /* Add margin between buttons */
-            background-color: #ffffff; /* Button background color */
+            padding: 10px 15px;
+            /* Adjust padding */
+            margin-right: 10px;
+            /* Add margin between buttons */
+            background-color: #ffffff;
+            /* Button background color */
             border: none;
             color: black;
         }
 
         .social-media .btn:hover {
-            background-color: black; /* Button background color on hover */
+            background-color: black;
+            /* Button background color on hover */
             color: white;
         }
 
         .social-media .btn i {
             font-size: 20px;
         }
-        
+
         /* Dark mode for modal content */
         .modal-content.dark-mode {
             background-color: #343a40;
             color: #ffffff;
         }
-
     </style>
 </head>
+
 <body>
     <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <a class="navbar-brand" href="#"><strong>Yash Thanki</strong></a>
@@ -158,20 +177,30 @@
     </nav> -->
 
     <div class="container">
+        <h2 class="card-title">About me</h2>
+        <hr>
         <div class="row">
             <div class="col-md-6 mt-4">
                 <div class="card">
                     <img src="./Assets/hero.png" class="card-img-top about-hero-img pt-4" alt="Hero Image">
                     <div class="card-body">
-                        <h5 class="card-title"><strong>About Me</strong></h5>
-                        <p class="card-text">Hello, my name is Yash Thanki and I am a driven and passionate Web Developer based in Ahmedabad. I have developed a strong expertise in creating dynamic and user-friendly websites that align with the latest trends and technologies.</p>
-                        <p class="card-text">My interest in coding and a drive to create meaningful online experiences led me to pursue a career in web development. Since then, I've developed my skills in HTML, CSS, JavaScript, and other computer languages to provide high-quality and efficient solutions to my clients.</p>
+                        <p class="card-text">Hello, my name is Yash Thanki and I am a driven and passionate Web
+                            Developer based in Ahmedabad. I have developed a strong expertise in creating dynamic and
+                            user-friendly websites that align with the latest trends and technologies.</p>
+                        <p class="card-text">My interest in coding and a drive to create meaningful online experiences
+                            led me to pursue a career in web development. Since then, I've developed my skills in HTML,
+                            CSS, JavaScript, and other computer languages to provide high-quality and efficient
+                            solutions to my clients.</p>
                         <!-- Social Media Buttons -->
                         <div class="social-media mt-3">
-                            <a href="https://www.instagram.com/thanki0501/" target="_blank" class="btn btn-primary mr-2"><i class="fab fa-instagram"></i></a>
-                            <a href="https://www.linkedin.com/in/yasht0501/" target="_blank" class="btn btn-primary mr-2"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://github.com/Yasht0501" target="_blank" class="btn btn-primary mr-2"><i class="fab fa-github"></i></a>
-                            <a href="https://www.youtube.com/channel/UCkKu54gnf5TsUPhA-KlD98Q" target="_blank" class="btn btn-primary"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.instagram.com/thanki0501/" target="_blank"
+                                class="btn btn-primary mr-2"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/yasht0501/" target="_blank"
+                                class="btn btn-primary mr-2"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/Yasht0501" target="_blank" class="btn btn-primary mr-2"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="https://www.youtube.com/channel/UCkKu54gnf5TsUPhA-KlD98Q" target="_blank"
+                                class="btn btn-primary"><i class="fab fa-youtube"></i></a>
                         </div>
                     </div>
                 </div>
@@ -205,7 +234,9 @@
                             <h5>Veritech IT Software Services</h5>
                             <p><strong>Position:</strong> Web Developer Internship</p>
                             <p><strong>Time Period:</strong> December 2023 - February 2024</p>
-                            <p><strong>Description:</strong> Designed websites using HTML & CSS. Implemented the backend logic using JavaScript. At the end of the internship i hosted my projects on Netlify.</p>
+                            <p><strong>Description:</strong> Designed websites using HTML & CSS. Implemented the backend
+                                logic using JavaScript. At the end of the internship i hosted my projects on Netlify.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -226,8 +257,11 @@
                                 <img src="./Assets/Exp.png" class="card-img-top" alt="Expense Tracker">
                                 <div class="card-body">
                                     <h5 class="card-title">Expense Tracker</h5>
-                                    <p class="card-text">Expense Tracker is a web page that empowers users to monitor their income and expenses.</p>
-                                    <a href="#" class="btn btn-secondary" onclick="openProjectModal('Expense Tracker', './Assets/expense.png', 'The Expense Tracker project is a web application built with React. Its main purpose is to help users keep track of their expenses. This webpage allows users to easily add and delete expenses, as well as view a summary of their spending habits and the available balance.', 'ReactJS, NodeJS, MongoDB', '3 Months')"><strong>View Details</strong></a>
+                                    <p class="card-text">Expense Tracker is a web page that empowers users to monitor
+                                        their income and expenses.</p>
+                                    <a href="#" class="btn btn-secondary"
+                                        onclick="openProjectModal('Expense Tracker', './Assets/expense.png', 'The Expense Tracker project is a web application built with React. Its main purpose is to help users keep track of their expenses. This webpage allows users to easily add and delete expenses, as well as view a summary of their spending habits and the available balance.', 'ReactJS, NodeJS, MongoDB', '3 Months')"><strong>View
+                                            Details</strong></a>
                                 </div>
                             </div>
                         </div>
@@ -237,8 +271,11 @@
                                 <img src="./Assets/BargainBuzz1.png" class="card-img-top" alt="BargainBuzz">
                                 <div class="card-body">
                                     <h5 class="card-title">BargainBuzz</h5>
-                                    <p class="card-text">BargainBuzz is your go-to destination for effortless and intelligent online shopping.</p>
-                                    <a href="#" class="btn btn-secondary" onclick="openProjectModal('BargainBuzz', './Assets/BargainBuzz.png', 'BargainBuzz is a website that will focus on gathering information from Flipkart and Reliance Digital in order to assist customers in deciding which product to purchase based on the price comparison that we provide.', 'Python, Django, MySQL', '4 Months')"><strong>View Details</strong></a>
+                                    <p class="card-text">BargainBuzz is your go-to destination for effortless and
+                                        intelligent online shopping.</p>
+                                    <a href="#" class="btn btn-secondary"
+                                        onclick="openProjectModal('BargainBuzz', './Assets/BargainBuzz.png', 'BargainBuzz is a website that will focus on gathering information from Flipkart and Reliance Digital in order to assist customers in deciding which product to purchase based on the price comparison that we provide.', 'Python, Django, MySQL', '4 Months')"><strong>View
+                                            Details</strong></a>
                                 </div>
                             </div>
                         </div>
@@ -248,8 +285,11 @@
                                 <img src="./Assets/GoBid.png" class="card-img-top" alt="GoBid">
                                 <div class="card-body">
                                     <h5 class="card-title">GoBid</h5>
-                                    <p class="card-text">It is an auction-based website where users can create auctions and submit bids.</p>
-                                    <a href="#" class="btn btn-secondary" onclick="openProjectModal('GoBid', './Assets/Gobid.jpeg', 'GoBid is a platform for online auctions that allows users to bid on various items listed on the website.', 'Python, Django, SQLite', '3 Months')"><strong>View Details</strong></a>
+                                    <p class="card-text">It is an auction-based website where users can create auctions
+                                        and submit bids.</p>
+                                    <a href="#" class="btn btn-secondary"
+                                        onclick="openProjectModal('GoBid', './Assets/Gobid.jpeg', 'GoBid is a platform for online auctions that allows users to bid on various items listed on the website.', 'Python, Django, SQLite', '3 Months')"><strong>View
+                                            Details</strong></a>
                                 </div>
                             </div>
                         </div>
@@ -258,10 +298,11 @@
                 </div>
             </div>
         </div>
-    </div>    
+    </div>
 
     <!-- Add a modal for project details -->
-    <div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel" aria-hidden="true">
+    <div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -275,7 +316,7 @@
                 </div>
             </div>
         </div>
-    </div>    
+    </div>
 
     <div class="container mt-5">
         <div class="row">
@@ -293,7 +334,8 @@
                         <input type="email" name="email" class="form-control" placeholder="Your Email" required>
                     </div>
                     <div class="form-group">
-                        <textarea name="message" class="form-control" placeholder="Your Message" rows="5" required></textarea>
+                        <textarea name="message" class="form-control" placeholder="Your Message" rows="5"
+                            required></textarea>
                     </div>
                     <button type="submit" class="btn btn-danger"><strong>Submit</strong></button>
                 </form>
@@ -305,7 +347,7 @@
             </div>
         </div>
     </div>
-    
+
     <footer class="footer mt-auto py-3">
         <hr>
         <div class="container text-center">
