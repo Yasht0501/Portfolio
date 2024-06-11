@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yash Thanki</title>
+    <link rel="icon" type="image/x-icon" href="/Assets/icon.ico">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <!-- Bootstrap CSS -->
@@ -156,6 +157,13 @@
             background-color: #343a40;
             color: #ffffff;
         }
+
+        .project-panel {
+            border: 0.5px solid #9FA6B2; /* Adjust the color and thickness as needed */
+            border-radius: 15px; /* Optional: add rounded corners */
+            
+        }
+
     </style>
 </head>
 
@@ -216,7 +224,7 @@
                             <div class="col">
                                 <p class="card-text"><strong>Master of Computer Applications</strong></p>
                                 <p class="card-text">GLS University, 2022 - 2024</p>
-                                <p class="card-text">Grades: 6.86 SGPA</p>
+                                <p class="card-text">Grades: 8.05 CGPA (SEM - 4)</p>
                             </div>
                         </div>
                     </div>
@@ -233,6 +241,12 @@
                                 logic using JavaScript. At the end of the internship i hosted my projects on Netlify.
                             </p>
                         </div>
+                        <hr>
+                        <div class="experience-item">
+                            <h5>Richa World Travels</h5>
+                            <p><strong>Position:</strong> Digital Marketing Executive</p>
+                            <p><strong>Time Period:</strong> May 2024 - Present</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -243,61 +257,133 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="portfolio card-body">
-                    <h2 class="card-title">Projects</h2>
-                    <hr>
-                    <div class="row">
-                        <!-- Project Card 1 -->
-                        <div class="col-md-4 mb-4">
-                            <div class="card">
-                                <img src="./Assets/Exp.png" class="card-img-top" alt="Expense Tracker">
-                                <div class="card-body">
-                                    <h5 class="card-title"><strong>Expense Tracker</strong></h5>
-                                    <p class="card-text">Expense Tracker is a web page that empowers users to monitor
-                                        their income and expenses.</p>
-                                    <a href="#" class="btn btn-secondary"
-                                        onclick="openProjectModal('Expense Tracker', './Assets/expense.png', 'The Expense Tracker project is a web application built with React. Its main purpose is to help users keep track of their expenses. This webpage allows users to easily add and delete expenses, as well as view a summary of their spending habits and the available balance.', 'ReactJS, NodeJS, MongoDB', '3 Months')"><strong>View
-                                            Details</strong></a>
+                    <div class="card text-center project-panel">
+                        <div class="card-header">
+                            <br>
+                            <h2 class="card-title"><strong>Projects</strong></h2>
+                          <!-- Tab links -->
+                            <ul class="nav nav-tabs card-header-tabs col-md-12">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="true" href="#" onclick="switchTab('web')"><strong>Web</strong></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" onclick="switchTab('mobile')"><strong>Mobile</strong></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" onclick="switchTab('graphic-design')"><strong>3D & Graphic Designing</strong></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+
+                                <!-- Project Card 1 - Web -->
+                                <div class="col-md-4 mb-4 project-item web">
+                                    <div class="card">
+                                        <img src="./Assets/Exp.png" class="card-img-top" alt="Expense Tracker">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><strong>Expense Tracker</strong></h5>
+                                            <p class="card-text">Expense Tracker is a web page that empowers users to monitor
+                                                their income and expenses.</p>
+                                            <a href="#" class="btn btn-outline-primary"
+                                                onclick="openProjectModal('Expense Tracker', './Assets/expense.png', 'The Expense Tracker project is a web application built with React. Its main purpose is to help users keep track of their expenses. This webpage allows users to easily add and delete expenses, as well as view a summary of their spending habits and the available balance.', 'ReactJS, NodeJS, MongoDB', '3 Months')"><strong>View
+                                                    Details</strong></a>
+                                        </div>
+                                    </div>
                                 </div>
+
+                                <div class="col-md-4 mb-4 project-item web">
+                                    <div class="card">
+                                        <img src="./Assets/BargainBuzz1.png" class="card-img-top" alt="BargainBuzz">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><strong>BargainBuzz</strong></h5>
+                                            <p class="card-text">BargainBuzz is your go-to destination for effortless and
+                                                intelligent online shopping.</p>
+                                            <a href="#" class="btn btn-outline-primary"
+                                                onclick="openProjectModal('BargainBuzz', './Assets/BargainBuzz.png', 'BargainBuzz is a website that will focus on gathering information from Flipkart and Reliance Digital in order to assist customers in deciding which product to purchase based on the price comparison that we provide.', 'Python, Django, MySQL', '4 Months')"><strong>View
+                                                    Details</strong></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-4 project-item web">
+                                    <div class="card">
+                                        <img src="./Assets/GoBid.png" class="card-img-top" alt="GoBid">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><strong>GoBid</strong></h5>
+                                            <p class="card-text">It is an auction-based website where users can create auctions
+                                                and submit bids.</p>
+                                            <a href="#" class="btn btn-outline-primary"
+                                                onclick="openProjectModal('GoBid', './Assets/Gobid.jpeg', 'GoBid is a platform for online auctions that allows users to bid on various items listed on the website.', 'Python, Django, SQLite', '3 Months')"><strong>View
+                                                    Details</strong></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Project Card 2 - Mobile -->
+                                <div class="col-md-4 mb-4 project-item mobile" style="display:none;">
+                                    <div class="card">
+                                        <img src="./Assets/county.png" class="card-img-top" alt="County">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><strong>County</strong></h5>
+                                            <p class="card-text">It is a counter to count.</p>
+                                            <a href="#" class="btn btn-outline-primary"
+                                                onclick="openProjectModal('County', './Assets/countyPage.png', 'An App that is made for counting the numbers, it comes with many features.', 'Android, Java', '3 Months')"><strong>View
+                                                    Details</strong></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Project Card 4 - Graphic Designing -->
+                                <div class="col-md-4 mb-4 project-item graphic-design" style="display:none;">
+                                    <div class="card">
+                                        <img src="./Assets/Graphic.png" class="card-img-top" alt="Posters">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><strong>Travel Package Posters</strong></h5>
+                                            <p class="card-text">Designed in canva.</p>
+                                            <a href="#" class="btn btn-outline-primary"
+                                                onclick="openProjectModal('Travel Package Posters', './Assets/graphicDesign.gif', 'Made this design using Canva.', 'Canva', '1 Week')"><strong>View
+                                                    Details</strong></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-4 project-item graphic-design" style="display:none;">
+                                    <div class="card">
+                                        <img src="./Assets/blender.png" class="card-img-top" alt="Blender">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><strong>3D House Model</strong></h5>
+                                            <p class="card-text">Made in Blender.</p>
+                                            <a href="#" class="btn btn-outline-primary"
+                                                onclick="openProjectModal('3D House Model', './Assets/blenderCard.gif', 'Made this house using Blender.', 'Blender', '1 Day')"><strong>View
+                                                    Details</strong></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-4 mb-4 project-item graphic-design" style="display:none;">
+                                    <div class="card">
+                                        <img src="./Assets/Car.png" class="card-img-top" alt="Posters">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><strong>Car Posters</strong></h5>
+                                            <p class="card-text">Designed in canva.</p>
+                                            <a href="#" class="btn btn-outline-primary"
+                                                onclick="openProjectModal('Car Posters', './Assets/CarCard.gif', 'Presenting Honda Civic Type R. Made this Car Poster using Canva.', 'Canva', '2 Days')"><strong>View
+                                                    Details</strong></a>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
-                        <!-- Project Card 2 -->
-                        <div class="col-md-4 mb-4">
-                            <div class="card">
-                                <img src="./Assets/BargainBuzz1.png" class="card-img-top" alt="BargainBuzz">
-                                <div class="card-body">
-                                    <h5 class="card-title"><strong>BargainBuzz</strong></h5>
-                                    <p class="card-text">BargainBuzz is your go-to destination for effortless and
-                                        intelligent online shopping.</p>
-                                    <a href="#" class="btn btn-secondary"
-                                        onclick="openProjectModal('BargainBuzz', './Assets/BargainBuzz.png', 'BargainBuzz is a website that will focus on gathering information from Flipkart and Reliance Digital in order to assist customers in deciding which product to purchase based on the price comparison that we provide.', 'Python, Django, MySQL', '4 Months')"><strong>View
-                                            Details</strong></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Project Card 3 -->
-                        <div class="col-md-4 mb-4">
-                            <div class="card">
-                                <img src="./Assets/GoBid.png" class="card-img-top" alt="GoBid">
-                                <div class="card-body">
-                                    <h5 class="card-title"><strong>GoBid</strong></h5>
-                                    <p class="card-text">It is an auction-based website where users can create auctions
-                                        and submit bids.</p>
-                                    <a href="#" class="btn btn-secondary"
-                                        onclick="openProjectModal('GoBid', './Assets/Gobid.jpeg', 'GoBid is a platform for online auctions that allows users to bid on various items listed on the website.', 'Python, Django, SQLite', '3 Months')"><strong>View
-                                            Details</strong></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Add more project cards as needed -->
-                    </div>
+                      </div>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Add a modal for project details -->
-    <div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel"
-        aria-hidden="true">
+    <div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -312,6 +398,7 @@
             </div>
         </div>
     </div>
+
 
     <div class="container mt-5">
         <div class="row">
@@ -350,6 +437,11 @@
         </div>
     </footer>
 
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
     <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- Font Awesome -->
@@ -368,7 +460,46 @@
                 darkModeIcon.classList.add("fa-moon");
             }
         }
+
+        // function switchTab(tabName) {
+        //     // Hide all project items
+        //     $('.project-item').hide();
+        //     // Show the selected tab's project items
+        //     $(`.${tabName}`).show();
+        // }
     </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Function to switch tabs and change active state
+            function switchTab(tabName) {
+                // Remove active class from all nav-links
+                document.querySelectorAll('.nav-link').forEach(function(navLink) {
+                    navLink.classList.remove('active');
+                });
+                // Add active class to the selected nav-link
+                document.querySelector(`.nav-link[onclick="switchTab('${tabName}')"]`).classList.add('active');
+                // Hide all project items
+                document.querySelectorAll('.project-item').forEach(function(projectItem) {
+                    projectItem.style.display = 'none';
+                });
+                // Show the selected tab's project items
+                document.querySelectorAll(`.${tabName}`).forEach(function(projectItem) {
+                    projectItem.style.display = 'block';
+                });
+            }
+
+            // Event listener for nav-link clicks
+            document.querySelectorAll('.nav-link').forEach(function(navLink) {
+                navLink.addEventListener('click', function(event) {
+                    event.preventDefault(); // Prevent the default behavior
+                    var tabName = this.getAttribute('onclick').match(/'([^']+)'/)[1]; // Get the tab name
+                    switchTab(tabName); // Call the switchTab function
+                });
+            });
+        });
+    </script>
+
     <!-- Add JavaScript to open the modal with project details -->
     <script>
         function openProjectModal(title, imageSrc, description, technologies, timeRequired) {
